@@ -7,6 +7,26 @@ describe('humanize', function() {
     assert.equal(humanize(1, 0), '1 millisecond');
   });
 
+  it('should return 0 milliseconds', function() {
+    assert.equal(humanize(0, 0), 'just now');
+  });
+
+  it('should return 1 nanosecond', function() {
+    assert.equal(humanize(0, 1e-6), '1 nanosecond');
+  });
+
+  it('should return 999 nanoseconds', function() {
+    assert.equal(humanize(0, 0.000999), '999 nanoseconds');
+  });
+
+  it('should return 1 microsecond', function() {
+    assert.equal(humanize(0, 1e-3), '1 microsecond');
+  });
+
+  it('should return 999 microseconds', function() {
+    assert.equal(humanize(0, 0.999), '999 microseconds');
+  });
+
   it('should return 1 millisecond', function() {
     assert.equal(humanize(0, 1), '1 millisecond');
   });
@@ -107,5 +127,20 @@ describe('humanize', function() {
     const then = moment().add(25, 'years');
 
     assert.equal(humanize(now, then), '25 years');
+  });
+
+  it('should accept [second, nanosecond] arrays', function() {
+    const now = [0, 5000000];
+    const then = [0, 0];
+
+    assert.equal(humanize(now, then), '5 milliseconds');
+  });
+
+  it('should accept a single argument', function() {
+    assert.equal(humanize(100), '100 milliseconds');
+  });
+
+  it('should return "in the future"', function() {
+    assert.equal(humanize(-1), 'in the future');
   });
 });
