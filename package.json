@@ -1,0 +1,35 @@
+{
+  "name": "tiny-human-time",
+  "version": "1.0.0",
+  "description": "Tiny module for human readable timespans.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "moment": "^2.11.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danasilver/tiny-human-time.git"
+  },
+  "keywords": [
+    "tiny",
+    "time",
+    "humanize",
+    "human",
+    "timespan",
+    "timedelta"
+  ],
+  "author": "Dana Silver",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danasilver/tiny-human-time/issues"
+  },
+  "homepage": "https://github.com/danasilver/tiny-human-time#readme"
+}
