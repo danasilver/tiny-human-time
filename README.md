@@ -14,8 +14,12 @@
 
 ### `humanize(t1, t2)`
 
-What you get when you `require('tiny-human-time')`. The order of `t1` and `t2`
-doesn't matter. Returns the converted value and the greatest matching unit
+What you get when you `require('tiny-human-time')`.
+
+`t1` and `t2` are instances of `Date` or integers whose value relative to one
+another is given in milliseconds. Their order doesn't matter.
+
+Returns the converted value and the greatest matching unit
 without going over. For example, `23 hours` will be followed by `1 day`.
 
 Supports:
