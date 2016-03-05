@@ -1,15 +1,15 @@
 {
   "name": "tiny-human-time",
   "version": "1.0.0",
-  "description": "Tiny module for human readable timespans.",
+  "description": "A tiny module for human readable timespans.",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "dependencies": {},
   "devDependencies": {
     "mocha": "^2.4.5",
     "moment": "^2.11.2"
+  },
+  "engines": {
+    "node": ">=4"
   },
   "scripts": {
     "test": "mocha"
@@ -26,7 +26,11 @@
     "timespan",
     "timedelta"
   ],
-  "author": "Dana Silver",
+  "author": {
+    "name": "Dana Silver",
+    "email": "dsilver1221@gmail.com",
+    "url": "http://www.danasilver.org"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/danasilver/tiny-human-time/issues"
