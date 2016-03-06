@@ -31,6 +31,12 @@
     "email": "dsilver1221@gmail.com",
     "url": "http://www.danasilver.org"
   },
+  "contributors": [
+    {
+      "name": "Tristan Davies",
+      "email": "github@tristan.io"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/danasilver/tiny-human-time/issues"
