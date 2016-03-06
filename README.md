@@ -12,19 +12,32 @@
 
 ## API
 
-### `humanize(t1, t2)`
+### `humanize(t1, t2 [, units])`
 
 What you get when you `require('tiny-human-time')`.
 
 `t1` and `t2` are instances of `Date` or integers whose value relative to one
 another is given in milliseconds. Their order doesn't matter.
 
-If `t2` is not given, `t1` alone will be used as the timespan.
+If `t2` is not given, `t1` alone will be used as the timespan relative to 0.
+
+Either argument can be an array of the form `[seconds, nanoseconds]`, like
+that produced by
+[process.hrtime()](https://nodejs.org/api/process.html#process_process_hrtime).
+
+An optional last argument, `units` has possible values `short` and `long`,
+defaulting to `long`. `units` can be given as the last argument even if
+`t2` is not given.
 
 Returns the converted value and the greatest matching unit
 without going over. For example, `23 hours` will be followed by `1 day`.
 
-Supports:
+### `humanize.short(t1, t2)`
+
+A convenience method to use `short` units. The possible arguments for `t1` and
+`t2` are the same as `humanize`.
+
+## Supports:
 
  - nanoseconds
  - microseconds

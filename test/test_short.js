@@ -1,6 +1,7 @@
 const assert = require('assert');
 const moment = require('moment');
-const short = require('..').short;
+const humanize = require('..');
+const short = humanize.short;
 
 describe('short', function() {
   it('should not care about order', function() {
@@ -142,5 +143,9 @@ describe('short', function() {
 
   it('should return "soon"', function() {
     assert.equal(short(-1), 'soon');
+  });
+
+  it('should accept "short" as the second argument to tinyHumanTime', function() {
+    assert.equal(humanize(100, 'short'), '100ms');
   });
 });

@@ -143,4 +143,8 @@ describe('humanize', function() {
   it('should return "in the future"', function() {
     assert.equal(humanize(-1), 'in the future');
   });
+
+  it('should accept "long" as the second argument to tinyHumanTime', function() {
+    assert.equal(humanize(100, 'long'), '100 milliseconds');
+  });
 });
