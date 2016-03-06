@@ -141,8 +141,8 @@ describe('short', function() {
     assert.equal(short(100), '100ms');
   });
 
-  it('should return "soon"', function() {
-    assert.equal(short(-1), 'soon');
+  it('should return 1ms', function() {
+    assert.equal(short(-1), '1ms');
   });
 
   it('should accept "short" as the second argument to tinyHumanTime', function() {
