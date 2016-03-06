@@ -1,6 +1,6 @@
 {
   "name": "tiny-human-time",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A tiny module for human readable timespans.",
   "main": "index.js",
   "dependencies": {},
@@ -31,6 +31,12 @@
     "email": "dsilver1221@gmail.com",
     "url": "http://www.danasilver.org"
   },
+  "contributors": [
+    {
+      "name": "Tristan Davies",
+      "email": "github@tristan.io"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/danasilver/tiny-human-time/issues"
