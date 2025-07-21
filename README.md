@@ -8,7 +8,7 @@
   A tiny module for human readable timespans.
 </p>
 
-[![Build Status](https://travis-ci.org/danasilver/tiny-human-time.svg?branch=master)](https://travis-ci.org/danasilver/tiny-human-time)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/danasilver/tiny-human-time/tests.yml)
 
 ## API
 
